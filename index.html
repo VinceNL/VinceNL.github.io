@@ -4,7 +4,8 @@
     <meta charset="utf-8">
 
     <title>Our superheroes</title>
-
+    <script src="chatInit.js"></script>
+    <script src="chatSet.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
   </head>
 
@@ -22,18 +23,12 @@
     var header = document.querySelector('header');
     var section = document.querySelector('section');
     
-
-    var requestURL = 'http://vincenl.github.io./chatTest.json';
-    var request = new XMLHttpRequest();
-
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
-
-    request.onload = function() {
-        var chatStatus = request.response;
-        alert(chatStatus[0]["BrandLoyalty_Chat"]);
+    
+    if (chat === "True") {
+      alert("damn");
     }
+    setTimeout(function(){ alert(chat); }, 100);
+    
     </script>
   </body>
 </html>
